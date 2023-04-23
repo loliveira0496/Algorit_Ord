@@ -3,9 +3,9 @@ n = len(lista)
 for j in range(n - 1):
     min_index = j
     for i in range(j, n):
-        if lista[i] < lista[min_index]:
+        if lista[i] < lista[min_index]: # min_index = j
             min_index = i
-        if lista[j] > lista[min_index]:
+        if lista[j] > lista[min_index]: # min_index = i
             aux = lista[j]
             lista[j] = lista[min_index]
             lista[min_index] = aux
